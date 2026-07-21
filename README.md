@@ -21,6 +21,7 @@
 | **What makes it different from a typical portfolio project** | It doesn't just predict — it **explains** every prediction with SHAP, segments customers into actionable risk tiers, and turns those tiers into specific retention recommendations a business team could act on today |
 | **Stack** | Python, Pandas, Scikit-Learn, XGBoost, SHAP, Streamlit |
 | **Try it live** | No install needed — [open the dashboard](https://customer-churn-prediction-retention-analytics-hd5cea3mxqbnp7sh.streamlit.app), upload a CSV or enter a customer manually, get a real prediction in seconds |
+| **Scope** | Trained only on the [Telco Customer Churn dataset](https://www.kaggle.com/datasets/alfathterry/telco-customer-churn-11-1-3) — it's a domain-specific model, not a general-purpose churn predictor for any random dataset |
 
 **Why this matters for a hiring decision:** most churn-prediction projects stop at a Jupyter notebook with an accuracy score. This one ships. It handles bad user input, validates uploaded data, explains its own decisions, and hands the business a downloadable action plan — the same lifecycle a real ML product needs in production.
 
@@ -89,13 +90,20 @@ Build an end-to-end system that:
 
 ## 📊 Dataset
 
-**Telco Customer Churn Dataset** — real telecommunications customer data covering demographics, account details, service subscriptions, billing, contracts, and churn status.
+**[Telco Customer Churn Dataset (Kaggle)](https://www.kaggle.com/datasets/alfathterry/telco-customer-churn-11-1-3)** — real telecommunications customer data covering demographics, account details, service subscriptions, billing, contracts, and churn status.
 
 ```
 Customers:        7,043
 Target Variable:  Churn Label
 Problem Type:     Binary Classification
 ```
+
+> ⚠️ **Important — Dataset Compatibility**
+> The model is trained **exclusively** on the schema and feature set of this specific Telco Customer Churn dataset. It expects the same columns, encodings, and value ranges the model was trained on.
+>
+> Uploading a **different / random dataset** — even another "customer churn" dataset with different column names or categories — will **not produce reliable predictions**. It may fail validation entirely, or silently produce meaningless results if the columns happen to align by chance. This is a single-domain model, not a general-purpose churn predictor.
+>
+> To test the app, use data that follows the same structure as the [original dataset](https://www.kaggle.com/datasets/alfathterry/telco-customer-churn-11-1-3) (see the Smart Dataset Validation feature below, which checks for this before allowing predictions).
 
 ---
 
@@ -201,7 +209,7 @@ The trained model isn't locked in a notebook — it's deployed as a live dashboa
 
 - **📊 Executive Overview** — total customers, churned, retained, churn rate at a glance
 - **🔮 Prediction Engine** — manual single-customer prediction *or* batch prediction via CSV upload
-- **📂 Smart Dataset Validation** — detects unsupported files, validates structure, handles missing columns, blocks bad predictions with clear error messages
+- **📂 Smart Dataset Validation** — detects unsupported files, validates structure, handles missing columns, blocks bad predictions with clear error messages. ⚠️ *The model only understands the schema of the [Telco Customer Churn dataset](https://www.kaggle.com/datasets/alfathterry/telco-customer-churn-11-1-3) it was trained on — uploading an unrelated CSV will be rejected or, at best, produce meaningless results.*
 - **⚠ Risk Segmentation** — Low (0–30%), Medium (30–70%), High (70–100%) risk tiers
 - **📈 Prediction Distribution** — churn vs. retained visualizations, risk distribution charts
 - **🧠 Model Insights** — feature importance, top churn drivers, performance metrics
