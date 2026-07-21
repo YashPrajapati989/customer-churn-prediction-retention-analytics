@@ -23,9 +23,7 @@
 | **Try it live** | No install needed — [open the dashboard](https://customer-churn-prediction-retention-analytics-hd5cea3mxqbnp7sh.streamlit.app), upload a CSV or enter a customer manually, get a real prediction in seconds |
 | **Scope** | Trained only on the [Telco Customer Churn dataset](https://www.kaggle.com/datasets/alfathterry/telco-customer-churn-11-1-3) — it's a domain-specific model, not a general-purpose churn predictor for any random dataset |
 
-**Why this matters for a hiring decision:** most churn-prediction projects stop at a Jupyter notebook with an accuracy score. This one ships. It handles bad user input, validates uploaded data, explains its own decisions, and hands the business a downloadable action plan — the same lifecycle a real ML product needs in production.
-
-📬 **Contact:** see [Author](#-author) below to connect.
+**Why this matters :** most churn-prediction projects stop at a Jupyter notebook with an accuracy score. This one ships. It handles bad user input, validates uploaded data, explains its own decisions, and hands the business a downloadable action plan — the same lifecycle a real ML product needs in production.
 
 ---
 
