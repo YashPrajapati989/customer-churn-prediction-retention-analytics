@@ -143,8 +143,6 @@ Customer-Churn-Prediction/
 │       ├── feature_importance.csv
 │       └── model_comparison.csv
 │
-├── screenshots/
-│
 └── src/
     ├── data_cleaning.py
     ├── feature_engineering.py
@@ -273,20 +271,12 @@ pandas, numpy, scikit-learn, streamlit, shap, matplotlib, joblib, xgboost
 
 ## 📸 Dashboard Screenshots
 
-> *Add screenshots to `screenshots/` and reference them here — this section is prime real estate for recruiters who won't click through to the live demo. A picture of the dashboard in action is worth more than a paragraph.*
+Screenshots live in [`reports/figures/`](reports/figures) — this section is prime real estate for recruiters who won't click through to the live demo, so it's worth embedding a few directly here.
 
-```
-screenshots/
-├── executive_overview.png
-├── prediction_results.png
-├── risk_analysis.png
-└── shap_explanation.png
-```
-
-Example (once added):
+Example (update filenames to match what's actually in the folder):
 ```markdown
-![Executive Overview](screenshots/executive_overview.png)
-![SHAP Explanation](screenshots/shap_explanation.png)
+![Executive Overview](reports/figures/executive_overview.png)
+![SHAP Explanation](reports/figures/shap_explanation.png)
 ```
 
 ---
