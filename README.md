@@ -645,15 +645,6 @@ encoders
 
 ## Launch Dashboard
 
-
-Navigate to dashboard folder:
-
-
-```bash
-cd dashboard
-```
-
-
 Run:
 
 
