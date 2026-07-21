@@ -274,10 +274,8 @@ pandas, numpy, scikit-learn, streamlit, shap, matplotlib, joblib, xgboost
 Screenshots live in [`reports/figures/`](reports/figures) — this section is prime real estate for recruiters who won't click through to the live demo, so it's worth embedding a few directly here.
 
 Example (update filenames to match what's actually in the folder):
-```markdown
-![Executive Overview](reports/figures/executive_overview.png)
 ![SHAP Explanation](reports/figures/shap_explanation.png)
-```
+
 
 ---
 
