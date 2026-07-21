@@ -1,5 +1,10 @@
 # 🤖 Customer Churn Prediction & Retention Analytics Platform
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://customer-churn-prediction-retention-analytics-hd5cea3mxqbnp7sh.streamlit.app)
+
+🌐 **Live Application:**  
+https://customer-churn-prediction-retention-analytics-hd5cea3mxqbnp7sh.streamlit.app# 🤖 Customer Churn Prediction & Retention Analytics Platform
+
 An end-to-end **Machine Learning + Explainable AI application** that predicts customer churn risk, identifies customers likely to leave, explains the reasons behind churn predictions, and provides actionable retention strategies.
 
 Built using **Python, Scikit-Learn, SHAP, and Streamlit**.
